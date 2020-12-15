@@ -1,5 +1,3 @@
- 
-
 public interface Observer {
-    public void update(float bright);
+    public void update(String fingerprint);
 }

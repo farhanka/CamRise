@@ -1,13 +1,12 @@
  
 
 import java.util.*;
-
-public class Kacamata implements Subject {
+public class CamRise implements Subject {
     private ArrayList<Observer> observers;
-    private float bright;
+    private String fingerprint;
    
 
-    public Kacamata() {
+    public CamRise() {
         observers = new ArrayList<Observer>();
     }
 
@@ -25,23 +24,21 @@ public class Kacamata implements Subject {
     public void notifyObservers() {
         for (int i = 0; i < observers.size(); i++) {
             Observer observer = (Observer)observers.get(i);
-            observer.update(bright);
+            observer.update(fingerprint);
         }
     }
 
-    public void brightChanged() {
+    public void fingerprintChanged() {
         notifyObservers();
     }
 
-    public void setBright(float bright) {
-        this.bright = bright;
-        brightChanged();
+    public void setFingerprint(String fingerprint) {
+        this.fingerprint = fingerprint;
+        fingerprintChanged();
     }
 
-    public float getbright() {
-        return bright;
+    public String getFingerprint() {
+        return fingerprint;
     }
-
-    
 
 }

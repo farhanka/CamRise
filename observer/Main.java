@@ -1,13 +1,8 @@
- 
-
-public class Main {
-
+ public class Main {
     public static void main(String[] args) {
-        Kacamata kacamata = new Kacamata();
-
-        CurrentBright currentDisplay = new CurrentBright(kacamata);
+        CamRise camera = new CamRise();
+        new CurrentFingerprint(camera);
       
-        kacamata.setBright(6);
-       
+        camera.setFingerprint("106");
     }
 }

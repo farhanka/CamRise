@@ -1,5 +1,3 @@
- 
-
-public interface DisplayElement {
-    public void display();
+ public interface DisplayElement {
+    public void display(String fingerprint);
 }
