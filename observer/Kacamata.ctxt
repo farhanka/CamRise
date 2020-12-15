@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Kacamata()
+comment1.params=o
+comment1.target=void\ addObserver(Observer)
+comment2.params=o
+comment2.target=void\ removeObserver(Observer)
+comment3.params=
+comment3.target=void\ notifyObservers()
+comment4.params=
+comment4.target=void\ brightChanged()
+comment5.params=bright
+comment5.target=void\ setBright(float)
+comment6.params=
+comment6.target=float\ getbright()
+numComments=7
